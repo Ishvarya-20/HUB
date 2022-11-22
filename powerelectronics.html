@@ -1,0 +1,54 @@
+<html>
+
+    
+        <meta charset="UTF-8">
+        <link rel ="stylesheet" href ="style.css">
+    
+    <body>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="english.html">ENGLISH</a></li>
+                <li><a href="mpmc.html">MPMC</a></li>
+                <li><a href="powerelectronics.html">POWERELECTRONICS</a></li>
+                <li><a href="Embeddedsystems.html">EMBEDDEDSYSTEMS</a></li>
+                
+            </ul>
+        </div>
+    <section >
+        <li><a href="#Com">POWERECECTRONICS</a></li><br>
+        <div class="COMSERVICESS" id="#Com">
+            <h1>POWERECECTRONICS</h1>  
+            <div class="items">
+                <button class="Button button1" onclick="opentool('Test')">POWER SEMICONDUCTORR DEVICES</button>
+              </div>
+              </div>
+              
+              
+              <div id="Test" class="w3-container w3-display-container tool"style="display:none">
+                <span onclick="this.parentElement.style.display='none'"
+                class="testt">&times;</span>
+                <h2>POWER SEMICONDUCTORR DEVICES</h2>
+                <p><b>DESCRIPTION:</b>Poer semiconductors,DC to DC,AC to AC,AC to DC,DC to AC<br>
+                  <b>HOURS:</b>10 hrs<br>
+                  <b>STAFF:</b>Mrs.MYTHILI<br>
+                  </p>
+              </div>
+              
+              <script>
+              function opentool(toolName) {
+                var i;
+                var x = document.getElementsByClassName("tool");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                document.getElementById(toolName).style.display = "block";  
+              }
+              </script>
+                 
+    </section>
+
+ 
+
+
+            

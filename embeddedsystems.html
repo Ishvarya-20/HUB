@@ -1,0 +1,110 @@
+<html>
+
+    
+        <meta charset="UTF-8">
+        <link rel ="stylesheet" href ="style.css">
+    
+    <body>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="english.html">ENGLISH</a></li>
+                <li><a href="mpmc.html">MPMC</a></li>
+                <li><a href="Powerelectronics.html">POWERELECTRONICS</a></li>
+                <li><a href="Embeddedsystems.html">EMBEDDEDSYSTEMS</a></li>
+              </ul>
+                
+        </div>
+        <section >
+            <li><a href="#Comm">THEORY</a></li><br> 
+            <li><a href="#commm">LABORATORY</a></li> <br>
+            
+        <div class="Compiler" id="#Comm">
+            <h1>THEORY</h1> 
+              <button class="Button button1" onclick="opentool('INT')">INTRODUCTION TO EMBEDDED SYSTEMS </button>
+              <button class="Button button2" onclick="opentool('AR')">ARM</button>
+  
+</div>
+</div>
+
+
+<div id="INT" class="w3-container w3-display-container tool"style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaab">&times;</span>
+  <h2>INTRODUCTION TO EMBEDDED SYSTEMS</h2>
+  <p><b>DESCRIPTION:</b>Fundamentals,I/O devies,embedded product lifecycle,Serial communication protocols,Task scheduling<br>
+    <b>HOURS:</b>10Hrs<br>
+    <b>STAFF:</b>Mrs.SANDHIYADEVI<br>
+   
+  
+</div>
+
+<div id="AR" class="w3-container w3-display-container tool" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaab">&times;</span>
+  <h2>ARM</h2>
+  <p><b>DESCRIPTION:</b>ARM Programmers module,Registers,Processor modes,Pipeline,Interrupts,ARM organisation,UART,ADC,DAC<br>
+    <b>HOURS:</b>20Hrs<br>
+    <b>STAFF:</b>Mrs.DEVI<br>
+   
+</div>
+
+<script>
+function opentool(toolName) {
+  var i;
+  var x = document.getElementsByClassName("tool");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(toolName).style.display = "block";  
+}
+</script>
+
+        <section class="Flexxx" id="Commm">
+                <h2>LABORATORY</h2> 
+    <button class="Button button1" onclick="opentool('LED')">LED</button>
+  <button class="Button button2" onclick="opentool('pro')">Programs using Arithimrtic operations</button>
+  
+</div>
+</div>
+
+
+<div id="LED" class="w3-container w3-display-container tool"style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaab">&times;</span>
+  <h2>LED</h2>
+  <p><b>DESCRIPTION:</b>LED Programming,Interfacing with LCD,PWM control<br>
+    <b>HOURS:</b>4Hrs<br>
+    <b>STAFF:</b>Mrs.SANDHIYADEVI<br>
+  </p>
+  
+</div>
+
+<div id="pro" class="w3-container w3-display-container tool" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaab">&times;</span>
+  <h2>Programs using Arithimrtic operations</h2>
+  <p><b>DESCRIPTION:</b>Addition,Subraction,multiplication,Division<br>
+    <b>HOURS:</b>10Hrs<br>
+    <b>STAFF:</b>Mrs.SANDHIYADEVI<br>
+    </p>
+</div>
+
+
+<script>
+function opentool(toolName) {
+  var i;
+  var x = document.getElementsByClassName("tool");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(toolName).style.display = "block";  
+}
+</script>
+
+              
+        </section>
+    </body>
+    </html>
+
+        

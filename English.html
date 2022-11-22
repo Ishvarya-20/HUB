@@ -1,0 +1,181 @@
+<html>
+
+        <meta charset="UTF-8">
+        <link rel ="stylesheet" href ="style.css">
+    
+    <body>
+        <div class="nav-links">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="english.html">ENGLISH</a></li>
+              <li><a href="mpmc.html">MPMC</a></li>
+              <li><a href="powerelectronics.html">POWERELECTRONICS</a></li>
+              <li><a href="Embeddedsystems.html">EMBEDDEDSYSTEMS</a></li>
+            </ul>
+        </div>
+    <section >
+    <div >   
+      <ul>
+
+        <li><a href="#les">LESSONS</a></li><br>
+        <li><a href="#sup">SUPLEMENTARY</a></li> <br>
+        <li><a href="#gra">GRAMMAR</a></li><br>
+        
+    </ul>
+    </div>
+    <div class="less" id="#les">
+        <h1>Lessons</h1>
+        <button class="Button button1" onclick="opentool('al')">A letter to god</button>
+        <button class="Button button2" onclick="opentool('nel')">Nelson Mandela</button>
+        <button class="Button Button3" onclick="opentool('wal')">walk to freedom</button>
+</div>
+
+<div id="al" class="w3-container w3-display-container tool"style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaa">&times;</span>
+  <h2>A letter to god</h2>
+  <p><b>DESCRIPTION:</b>Lencho is a farmer who writes a letter to God when his crops
+    are ruined, asking for a hundred pesos. Does Lenchos letter reach
+    God? Does God send him the money? Think what your answers to
+    these questions would be, and guess how the story continues, before
+    you begin to read it<br>
+    <b>PARTS:</b>G.L.Fuentes<br>
+    <b>YEAR:</b>2020<br>
+   
+  
+</div>
+
+<div id="nel" class="w3-container w3-display-container tool" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaa">&times;</span>
+  <h2>Nelson Mandela</h2>
+  <p><b>DESCRIPTION:</b>The inauguration ceremony took place in the Union
+    Buildings amphitheatre in Pretoria today, attended by
+    politicians and dignitaries from more than 140 countries
+    around the world. “Never, never again will this beautiful land
+    experience the oppression of one by another, ” said Nelson
+    Mandela in his address.<br>
+  
+    <b>PARTS:</b>Nelson Rolihlaha mandela<br>
+    <b>YEAR:</b>1998<br>
+    
+</div>
+
+<div id="wal" class="w3-container w3-display-container tool" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaa">&times;</span>
+  <h2>Walk to freedom</h2>
+  <p><b>DESCRIPTION:</b>A few moments later we all lifted our eyes in
+    awe as a spectacular array of South African jets,
+    helicopters and troop carriers roared in perfect
+    formation over the Union Buildings. <br>
+    <b>PARTS:</b>Jonhy<br>
+    <b>YEAR:</b>2000<br>
+    
+</div>
+
+<script>
+function opentool(toolName) {
+  var i;
+  var x = document.getElementsByClassName("tool");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(toolName).style.display = "block";  
+}
+</script>
+
+    </div>      
+    </section>
+    <section class="supl" id="sup">
+        <h1>Suplementary</h1>
+
+        <button class="Button button1" onclick="opentool('fir')">Fire and Ice</button>
+        <button class="Button button2" onclick="opentool('tig')">A tiger in the zoo</button>
+
+<div id="fir" class="w3-container w3-display-container tool"style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaa">&times;</span>
+  <h2>Fire and Ice</h2>
+  <p><b>DESCRIPTION:</b>Some say the world will end in fire
+    Some say in ice.
+    From what Ive tasted of desire
+    I hold with those who favour fire.<br>
+    <b>PARTS:</b>ROBERT FROST<br>
+    <b>YEAR:</b>2020<br>
+  </p> 
+    
+  
+</div>
+
+<div id="tig" class="w3-container w3-display-container tool" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaa">&times;</span>
+  <h2>A tiger in the zoo</h2>
+  <p><b>DESCRIPTION:</b>He stalks in his vivid stripes
+    The few steps of his cage,
+    On pads of velvet quiet,
+    In his quiet rage.<br>
+    <b>PARTS:</b>LESLIE NORRIS<br>
+    <b>YEAR:</b>2004<br></p>
+    
+</div>
+
+<script>
+function opentool(toolName) {
+  var i;
+  var x = document.getElementsByClassName("tool");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(toolName).style.display = "block";  
+}
+</script>
+     
+    </section>
+   
+    <section class="gram" id="gra">
+        <h1>Grammer</h1>
+        <div class="items">
+            <button class="Button button1" onclick="opentool('ten')">Tenses</button>
+             <button class="Button button2" onclick="opentool('deg')">Degrees of comparison</button>
+         
+    </div>
+    
+    
+    
+    <div id="ten" class="w3-container w3-display-container tool"style="display:none">
+      <span onclick="this.parentElement.style.display='none'"
+      class="aaa">&times;</span>
+      <h2>Tenses</h2>
+      <p><b>DESCRIPTION:</b>In English grammar, verbs are often used in a way that it indicates or denotes the time when an event occurred. These verbs that take up different forms to indicate the time of an action, event or condition by changing its form are called as tenses.<br>
+        <b>PARTS:</b>Past ,Present and future tenses<br>
+      
+      
+    </div>
+    
+    <div id="deg" class="w3-container w3-display-container tool" style="display:none">
+      <span onclick="this.parentElement.style.display='none'"
+      class="aaa">&times;</span>
+      <h2>Degrees of comparison</h2>
+      <p><b>DESCRIPTION:</b>There are three degrees of comparison: The Positive, the Comparative, the Superlative. The Positive degree is the simplest form of the adjective. It is used when no comparison is meant; for example – Bina is a tall girl.
+        <br>
+        <b>PARTS:</b>Positive degree of comparison.
+        Comparative degree of comparison.
+        Superlative degree of comparison<br>
+        
+    </div>
+    
+    
+    <script>
+    function opentool(toolName) {
+      var i;
+      var x = document.getElementsByClassName("tool");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      document.getElementById(toolName).style.display = "block";  
+    }
+    </script>
+
+    </section>

@@ -1,0 +1,126 @@
+<html>
+
+        <meta charset="UTF-8">
+        <link rel ="stylesheet" href ="style.css">
+   
+    <body>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="english.html">ENGLISH</a></li>
+                <li><a href="mpmc.html">MPMC</a></li>
+                <li><a href="Powerelectronics.html">POWERELECTRONICS</a></li>
+                <li><a href="Embeddedsystems.html">EMBEDDEDSYSTEMS</a></li>
+              </ul>
+        </div>
+        <section >
+           <li><a href="#Can">THEORY</a></li><br> 
+            <li><a href="#Flexxxx">LABORATORY</a></li><br>
+        <div class="Canstack" id="#can">
+            <h1>THEORY</h1>
+            <div class="items">
+        <button class="Button button1" onclick="opentool('mp')">Microprocessors</button>
+         <button class="Button button2" onclick="opentool('mc')">Microcontrollers</button>
+         <button class="Button Button3" onclick="opentool('pic')">PIC</button>
+         <button class="Button Button4" onclick="opentool('embe')">Embedded Systems</button>
+</div>
+</div>
+
+
+<div id="mp" class="w3-container w3-display-container tool"style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaba">&times;</span>
+  <h2>Microprocessors</h2>
+  <p><b>DESCRIPTION:</b>Architecture of 8086,Pinout of 8086,pipelining concept,Pinout of 8085<br>
+    <b>HOURS:</b>15 Hrs<br>
+    <b>STAFF:</b>Mr.MADHANKUMAR<br>
+    </p>
+  
+</div>
+
+<div id="mc" class="w3-container w3-display-container tool" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaba">&times;</span>
+  <h2>Microcontrollers</h2>
+  <p><b>DESCRIPTION:</b>Architecture of 8051,addressing modes,instruction set,timers and counters<br>
+    <b>HOURS:</b>10 Hrs<br>
+    <b>STAFF:</b>Mr.MADHANKUMAR<br>
+   </p>
+</div>
+
+<div id="pic" class="w3-container w3-display-container tool" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="aaba">&times;</span>
+  <h2>PIC</h2>
+  <p><b>DESCRIPTION:</b> Architecture of PIC 16FX8xx,I/O-FSR-oscillator circuit,Instruction set basics<br>
+    <b>HOURS:</b>9Hrs<br>
+    <b>STAFF:</b>Mr.MADHANKUMAR<br>
+    </p>
+</div>
+
+<div id="embe" class="w3-container w3-display-container tool" style="display:none">
+    <span onclick="this.parentElement.style.display='none'"
+    class="aaba">&times;</span>
+    <h2>Embedded Systems</h2>
+    <p><b>DESCRIPTION:I/o ports,Timers,ADC,PWM</b><br>
+      <b>HOURS:</b>12Hrs<br>
+      <b>STAFF:</b>Mr.MADHANKUMAR<br>
+      </p>
+  </div>
+<script>
+function opentool(toolName) {
+  var i;
+  var x = document.getElementsByClassName("tool");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(toolName).style.display = "block";  
+}
+</script>
+<section class="Flexxxx" id="Com">
+    <h2>LABORATORY</h2> 
+<button class="Button button1" onclick="opentool('aut')">Timers</button>
+<button class="Button button2" onclick="opentool('auto')">Ports</button>
+
+</div>
+</div>
+
+
+<div id="aut" class="w3-container w3-display-container tool"style="display:none">
+<span onclick="this.parentElement.style.display='none'"
+class="aaa">&times;</span>
+<h2>Timers</h2>
+<p><b>DESCRIPTION:</b>ADC,DAC,7 Segment<br>
+<b>HOURS:</b>5Hrs<br>
+<b>STAFF:</b>Mrs.PRIYA<br>
+</p>
+
+</div>
+
+<div id="auto" class="w3-container w3-display-container tool" style="display:none">
+<span onclick="this.parentElement.style.display='none'"
+class="aaa">&times;</span>
+<h2>Ports</h2>
+<p><b>DESCRIPTION:</b>Serial input,serial output<br>
+<b>HOURS:</b>4Hrs<br>
+<b>STAFF:</b>Mrs.PRIYA<br>
+</p>
+</div>
+
+
+<script>
+function opentool(toolName) {
+var i;
+var x = document.getElementsByClassName("tool");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";  
+}
+document.getElementById(toolName).style.display = "block";  
+}
+</script>
+</section>
+
+</body>
+</html>
+
+        
